@@ -1,0 +1,429 @@
+html{
+    font-size: 16px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+#container{
+    width: 100%;
+    height: 100%; 
+}
+
+main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100vw;
+    height: auto;
+}
+
+/* HEADER */
+
+header{
+    position: absolute;
+    color: white;
+    width: 100vw;
+    z-index: 100;
+}
+
+.header-background{
+    width: 100vw;
+    background-color: #141E27;
+    opacity: 1;
+    height: 10vh;
+    transform: translateY(-10vh);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    justify-content: space-between;
+    margin: 0rem auto 0 auto;
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    z-index: 50;
+    color: white;
+    background-color: hsl(40 10% 10% / 0.4);;
+    
+}
+
+.fb-logo{
+    display: inline;
+    width: 4rem;
+    height: auto;
+    margin: 1rem 0 0 2rem;
+    z-index: 50;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 0.8rem;
+    
+    margin-top: 1.5rem;
+}
+
+li{
+    padding: 0.3rem 0.5rem;
+    text-align: center;
+}
+
+li:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+
+/* about */
+
+#about{
+    background-color: #141E27;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.about-title{
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15vw;
+    filter:drop-shadow(2px 2px 4px black);
+    margin: 15rem auto 5rem auto;
+}
+
+.flexy{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+width: 95vw;
+height: auto;
+margin: 2rem auto;
+}
+
+.text{
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    width: 50%;
+    
+   
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+/* STACK ARTICLE */
+
+.stack{
+    width: 100vw;
+    min-height: 60vh;
+    text-align: center;
+    margin: 0 0;
+    grid-area: stack;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stack-h2{
+    margin: 0rem auto 2rem auto;
+    font-size: 2rem;
+    font-family: noka, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    padding-top: 3rem;
+}
+
+.stack-programmes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 2rem auto 2rem auto;
+  }
+
+
+.program{
+    transform: scale(2.5);
+  }
+
+  .fa-js{
+    transform: scale(2.5);
+  }
+
+/* TOOLS */ 
+
+.tools{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 4rem auto 1rem auto;
+  }
+  
+  .illustrator{
+    
+    width: 40px;
+    height: auto;
+  }
+  
+  .photoshop{
+    width: 40px;
+    height: auto;
+  }
+  
+  .premiere{
+    width: 40px;
+    height: auto;
+  }
+  
+  .xd{
+    width: 40px;
+    height: auto;
+  }
+
+/* MEDIA QUERY FOR MY STACK IN DESKTOP */
+
+  @media only screen and (min-width: 1000px){
+    .container{
+    grid-template-rows: 100vh 100vh 100vh 110vh 70vh 60vh 20vh;
+  }
+  .stack{
+  width: 100vw;
+  min-height: 70vh;
+  text-align: center;
+  margin: 0rem 0 0 0;
+  grid-area: stack;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+
+.stack-h2{
+  margin: 0rem auto 3rem auto;
+  font-size: 4rem;
+  font-family: noka, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  
+}
+
+.stack-programmes{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  
+  margin: 5rem auto 2rem auto;
+}
+
+
+.program{
+  transform: scale(4);
+
+}
+
+.fa-js{
+  transform: scale(4);
+}
+
+
+/* TOOLS */ 
+
+.tools{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: 4rem auto 1rem auto;
+}
+
+.illustrator{
+  width: 70px;
+  height: auto;
+}
+
+.photoshop{
+  width: 70px;
+  height: auto;
+}
+
+.premiere{
+  width: 70px;
+  height: auto;
+}
+
+.xd{
+  width: 70px;
+  height: auto;
+}
+}
+
+
+
+
+
+
+/* CV */ 
+
+.cv{
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    width: 30%; 
+    margin: 3rem auto;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+
+/* BUTTON */
+
+.about-btn{
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: white;
+    background-color:#141E27;
+    transition: all;
+    margin: 5rem auto 4rem auto;
+    padding: 0.5rem 1rem;
+}
+
+.about-btn:hover{
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    box-shadow: 2px 4px 4px;
+    border-radius: 5px;
+    color:#141E27;
+    background-color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px){
+   
+    /* about */
+
+#about{
+    background-color: #141E27;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.about-title{
+  font-family: "ohm-bold", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15vw;
+   
+    margin: 10rem auto 3rem auto;
+}
+
+.flexy{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100vw;
+height: auto;
+margin: 2rem auto;
+}
+
+.text{
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    width: 80%;
+    border-right: none;
+    padding-right: 0;
+    line-height: 1.5;
+    margin: 1rem auto;
+    text-align: left;
+}
+
+/* CV */ 
+
+.cv{
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    width: 80%; 
+    margin: 3rem auto;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+
+/* BUTTON */
+
+.about-btn{
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: white;
+    background-color:#141E27;
+    transition: all;
+    margin: 5rem auto 4rem auto;
+    padding: 0.5rem 1rem;
+}
+
+.about-btn:hover{
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    box-shadow: 2px 4px 4px;
+    border-radius: 5px;
+    color:#141E27;
+    background-color: white;
+    cursor: pointer;
+}
+}

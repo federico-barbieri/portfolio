@@ -1,0 +1,386 @@
+html{
+    font-size: 16px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+#container{
+    width: 100%;
+    height: 100%; 
+}
+
+main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100vw;
+    
+}
+
+/* HEADER */
+
+header{
+    position: absolute;
+    color: white;
+    width: 100vw;
+    z-index: 100;
+}
+
+.header-background{
+    width: 100vw;
+    background-color: #141E27;
+    opacity: 1;
+    height: 10vh;
+    transform: translateY(-10vh);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    justify-content: space-between;
+    margin: 0rem auto 0 auto;
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    z-index: 50;
+    color: white;
+    background-color: hsl(40 10% 10% / 0.4);
+    
+}
+
+.fb-logo{
+    display: inline;
+    width: 4rem;
+    height: auto;
+    margin: 1rem 0 0 2rem;
+    z-index: 50;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 0.8rem;
+    
+    margin-top: 1.5rem;
+}
+
+li{
+    padding: 0.3rem 0.5rem;
+    text-align: center;
+}
+
+li:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+
+/* about */
+
+#rotoscohagen{
+    /*background:linear-gradient(to bottom, lightblue, pink);
+    background:linear-gradient(to bottom, #B9CCED, #141E27);*/
+    background-color: #141E27;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.rotoscohagen-title{
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14vw;
+    margin: 15rem auto 5rem auto;
+}
+
+/*intro*/
+
+.intro{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+max-width: 95vw;
+
+margin: 2rem auto;
+}
+
+.text{
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    max-width: 55ch;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+/*gif*/
+
+.gif{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 95vw;
+    margin: 2rem auto;
+}
+
+/* swan */
+
+.swan-2{
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 2rem auto;
+    filter: drop-shadow(2px 5px 5px black);
+}
+
+.swan-psd{
+    width: 40%;
+    height: auto;
+}
+
+.swan{
+    width: 40%;
+    height: auto;
+}
+
+/* up */
+
+.up-2{
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 2rem auto;
+    filter: drop-shadow(2px 5px 5px black);
+}
+
+.up-psd{
+    width: 40%;
+    height: auto;
+}
+
+.up{
+    width: 40%;
+    height: auto;
+}
+
+/* tivoli */
+
+.tivoli-2{
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    filter: drop-shadow(2px 5px 5px black);
+}
+
+.tivoli-psd{
+    width: 40%;
+    height: auto;
+}
+
+.tivoli{
+    width: 40%;
+    height: auto;
+}
+
+/* video */
+
+.video{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  height: 70vh;
+  margin: 2rem auto;
+}
+
+.watch{
+  font-family: forma-djr-micro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: white;
+  width: 85%;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+video{
+  width: 80%;
+  height: auto;
+}
+
+
+/* BUTTON */
+
+.back-btn{
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: white;
+    background-color:#141E27;
+    transition: all;
+    margin: 5rem auto 4rem auto;
+    padding: 0.5rem 1rem;
+}
+
+.back-btn:hover{
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    box-shadow: 2px 4px 4px;
+    border-radius: 5px;
+    color:#141E27;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1000px){
+
+    .rotoscohagen-title{
+        font-family: "ohm-bold", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12vw;
+        margin: 15rem auto 5rem auto;
+    }
+
+}
+
+@media only screen and (max-width: 800px){
+
+  .gif{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 95vw;
+    margin: 2rem auto;
+}
+
+/* swan */
+
+.swan-2{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 2rem auto;
+    filter: drop-shadow(2px 5px 5px black);
+}
+
+.swan-psd{
+    width: 90%;
+    height: auto;
+    padding-bottom: 2rem;
+}
+
+.swan{
+    width: 90%;
+    height: auto;
+}
+
+/* up */
+
+.up-2{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 2rem auto;
+    filter: drop-shadow(2px 5px 5px black);
+}
+
+.up-psd{
+    width: 90%;
+    height: auto;
+    
+}
+
+.up{
+    width: 90%;
+    height: auto;
+    padding-bottom: 2rem;
+}
+
+/* tivoli */
+
+.tivoli-2{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    filter: drop-shadow(2px 5px 5px black);
+}
+
+.tivoli-psd{
+    width: 90%;
+    height: auto;
+    padding-bottom: 2rem;
+}
+
+.tivoli{
+    width: 90%;
+    height: auto;
+}
+
+
+video{
+    width: 100%; 
+}
+
+}
+
+
+@media only screen and (max-width: 500px){
+    .watch{
+        margin-top: 0;
+    }
+
+}

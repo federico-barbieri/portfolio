@@ -1,0 +1,968 @@
+html{
+    font-size: 16px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+#container{
+    width: 100%;
+    height: 100%; 
+}
+
+main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100vw;
+    height: auto;
+}
+
+/* HEADER */
+
+header{
+    position: absolute;
+    color: white;
+    width: 100vw;
+    z-index: 100;
+}
+
+.header-background{
+    width: 100vw;
+    background-color: #141E27;
+    opacity: 1;
+    height: 10vh;
+    transform: translateY(-10vh);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    justify-content: space-between;
+    margin: 0rem auto 0 auto;
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    z-index: 50;
+    color: white;
+    background-color: hsl(40 10% 10% / 0.4);;
+    
+}
+
+.fb-logo{
+    display: inline;
+    width: 4rem;
+    height: auto;
+    margin: 1rem 0 0 2rem;
+    z-index: 50;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 0.8rem;
+    
+    margin-top: 1.5rem;
+}
+
+li{
+    padding: 0.3rem 0.5rem;
+    text-align: center;
+}
+
+li:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+/* chameleon */
+
+#chameleon{
+    background:linear-gradient(to bottom, lightblue, #00B200);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.chameleon-title{
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6vw;
+
+    margin: 15rem auto 5rem auto;
+}
+
+
+/* GRID */ 
+
+#cham-grid{
+    display: grid;
+    width: 90vw;
+    height: 480vh;
+    margin: 5rem auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+    "intro"
+    "rules"
+    "cry"
+    "early"
+    "expressions"
+    "elements";
+
+    color: white;
+    justify-content: center;
+}
+
+/* INTRO DIV */ 
+
+.intro{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto 2rem auto;
+    
+    grid-area: intro;
+    
+}
+
+.intro-p{
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    width: 50%;
+}
+    
+.pink-svg{
+    width: 30%;
+    height: auto;
+    display: block;
+   
+}
+
+/* early DIV */ 
+
+.early{
+    width: 95%;
+    height: auto;
+    margin: 2rem auto;
+    grid-area: early;
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.early-svg{
+    width: 40%;
+    height: auto;
+    display: block; 
+}
+
+.early-p{
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    width: 50%;
+    display: block;
+}
+
+/* EXPRESSIONS DIV */ 
+
+.expressions{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto 2rem auto;
+    
+    grid-area: expressions;
+    
+}
+
+.expressions-p{
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    width: 40%;
+    margin-left: 2rem;
+}
+    
+.expressions-svg{
+    width: 40%;
+    height: auto;
+    display: block;  
+}
+
+/* RULES DIV */ 
+
+.rules{
+    width: 95%;
+    height: auto;
+    margin: 2rem auto;
+    grid-area: rules;
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rules-svg{
+    width: 40%;
+    height: auto;
+    display: block; 
+    
+}
+
+.rules-p{
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    width: 35%;
+    display: block;
+    margin-right: 2rem;
+}
+
+
+/* cry DIV */ 
+
+.cry{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto 2rem auto;
+    
+    grid-area: cry;
+    
+}
+
+.cry-p{
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    width: 40%;
+    margin-left: 2rem;
+}
+    
+.cry-svg{
+    width: 40%;
+    height: auto;
+    display: block;  
+}
+
+/* elements */
+
+.elements{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto 2rem auto;
+    
+    grid-area: elements;
+    
+}
+
+.elements-p{
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    width: 100%;  
+    margin-bottom: 5rem;
+}
+
+.faceGemsHearts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    margin: 1rem auto;
+}
+    
+.face-svg{
+    width: 30%;
+    height: auto;
+}
+
+.gemsHearts{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gems-svg{
+    width: 60%;
+    height: auto;
+}
+
+.hearts-svg{
+    width: 60%;
+    height: auto;
+}
+
+.chams-svg{
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* FINAL PRODUCT */
+
+.final-product{
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+
+
+/* BUTTON */
+
+.chameleon-btn{
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 2rem;
+    color: white;
+    background-color:#141E27;
+    transition: all;
+    margin: 5rem auto 4rem auto;
+    padding: 0.5rem 1rem;
+}
+
+.chameleon-btn:hover{
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    box-shadow: 2px 4px 4px;
+    border-radius: 5px;
+    color:#141E27;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+/* MEDIA QUERY 700PX */ 
+
+@media only screen and (max-width: 700px){
+
+/* GRID */ 
+
+#cham-grid{
+    display: grid;
+    width: 90vw;
+    height: 480vh;
+    margin: 2rem auto 3rem auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+    "intro"
+    "rules"
+    "cry"
+    "early"
+    "expressions"
+    "elements";
+
+    color: white;
+    
+    justify-content: center;
+}
+
+/* INTRO DIV */ 
+
+.intro{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 2rem auto;
+    
+    grid-area: intro;
+    
+}
+
+.intro-p{
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: white;
+    width: 50%;
+    text-align: left;
+}
+    
+.pink-svg{
+    width: 40%;
+    height: auto;
+    display: block;
+}
+
+/* RULES DIV */ 
+
+.rules{
+    width: 95%;
+    height: auto;
+    margin: 2rem auto;
+    grid-area: rules;
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rules-svg{
+    width: 40%;
+    height: auto;
+    display: block; 
+    
+}
+
+.rules-p{
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: white;
+    width: 50%;
+    display: block;
+    margin-right: 2rem;
+    text-align: right;
+}
+
+/* cry DIV */ 
+
+.cry{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 2rem auto;
+    
+    grid-area: cry;
+    
+}
+
+.cry-p{
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: white;
+    width: 50%;
+    text-align: left;
+}
+    
+.cry-svg{
+    width: 40%;
+    height: auto;
+    display: block;  
+}
+
+/* early DIV */ 
+
+.early{
+    width: 95%;
+    height: auto;
+    margin: 0rem auto 2rem auto;
+    grid-area: early;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.early-svg{
+    width: 40%;
+    height: auto;
+    display: block; 
+}
+
+.early-p{
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: white;
+    width: 50%;
+    text-align: right;
+}
+
+/* EXPRESSIONS DIV */ 
+
+.expressions{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 2rem auto;
+    
+    grid-area: expressions;
+    
+}
+
+.expressions-p{
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: white;
+    width: 45%;
+    
+    text-align: left;
+}
+    
+.expressions-svg{
+    width: 40%;
+    height: auto;
+    display: block;  
+}
+
+/* elements */
+
+.elements{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 2rem auto;
+    
+    grid-area: elements;
+    
+}
+
+.elements-p{
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    width: 90%;  
+    margin-bottom: 2rem;
+}
+
+.faceGemsHearts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    margin: 1rem auto;
+}
+    
+.face-svg{
+    width: 30%;
+    height: auto;
+}
+
+.gemsHearts{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gems-svg{
+    width: 60%;
+    height: auto;
+}
+
+.hearts-svg{
+    width: 60%;
+    height: auto;
+}
+
+.chams-svg{
+    width: 100%;
+    height: auto;
+}
+
+/* BUTTON */
+
+.chameleon-btn{
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 2rem;
+    color: white;
+    background-color:#141E27;
+    transition: all;
+    margin: 5rem auto 4rem auto;
+    padding: 0.5rem 1rem;
+}
+
+.chameleon-btn:hover{
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    box-shadow: 2px 4px 4px;
+    border-radius: 5px;
+    color:#141E27;
+    background-color: white;
+    cursor: pointer;
+}
+
+}
+
+
+/* MEDIA QUERY 500PX */ 
+
+@media only screen and (max-width: 500px){
+
+    .chameleon-title{
+        font-family: "ohm-bold", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 10vw;
+       
+        margin: 15rem auto 5rem auto;
+    }
+
+    /* GRID */ 
+    
+    #cham-grid{
+        display: grid;
+        width: 90vw;
+        height: 320vh;
+        margin: 2rem auto 3rem auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+        "intro"
+        "rules"
+        "cry"
+        "early"
+        "expressions"
+        "elements";
+    
+        color: white;
+        
+        justify-content: center;
+    }
+    
+    /* INTRO DIV */ 
+    
+    .intro{
+        width: 95%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto 2rem auto;
+        
+        grid-area: intro;
+        
+    }
+    
+    .intro-p{
+        font-family: forma-djr-micro, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1rem;
+        color: white;
+        width: 50%;
+        text-align: left;
+    }
+        
+    .pink-svg{
+        width: 40%;
+        height: auto;
+        display: block;
+        margin-top: 10rem;
+    }
+    
+    /* RULES DIV */ 
+    
+    .rules{
+        width: 95%;
+        height: auto;
+        margin: 2rem auto 0 auto;
+        grid-area: rules;
+       
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .rules-svg{
+        width: 40%;
+        height: auto;
+        display: block; 
+        margin-bottom: 10rem;
+       
+        
+    }
+    
+    .rules-p{
+        font-family: forma-djr-micro, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1rem;
+        color: white;
+        width: 50%;
+        display: block;
+        margin-right: 2rem;
+        text-align: right;
+        margin-bottom: 2rem;
+    }
+    
+    /* cry DIV */ 
+    
+    .cry{
+        width: 95%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto 0rem auto;
+        grid-area: cry;
+        
+    }
+    
+    .cry-p{
+        font-family: forma-djr-micro, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1rem;
+        color: white;
+        width: 50%;
+        text-align: left;
+    }
+        
+    .cry-svg{
+        width: 50%;
+        height: auto;
+        display: block;  
+        margin-bottom: 10rem;
+    }
+    
+    /* early DIV */ 
+    
+    .early{
+        width: 95%;
+        height: auto;
+        margin: 0rem auto 2rem auto;
+        grid-area: early;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .early-svg{
+        width: 80%;
+        height: auto;
+        display: block; 
+        margin-bottom: 0;
+    }
+    
+    .early-p{
+        font-family: forma-djr-micro, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1rem;
+        color: white;
+        width: 80%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    /* EXPRESSIONS DIV */ 
+    
+    .expressions{
+        width: 95%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0 auto 0rem auto;
+        grid-area: expressions;
+        
+    }
+    
+    .expressions-p{
+        font-family: forma-djr-micro, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1rem;
+        color: white;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        margin: 3rem auto 3rem auto;
+    }
+        
+    .expressions-svg{
+        width: 90%;
+        height: auto;
+        display: block;  
+        margin-bottom: 0;
+    }
+    
+    /* elements */
+    
+    .elements{
+        width: 95%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 5rem auto 2rem auto;
+        
+        grid-area: elements;
+        
+        
+    }
+    
+    .elements-p{
+        font-family: forma-djr-micro, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5rem;
+        color: white;
+        width: 90%;  
+        margin-bottom: 0rem;
+    }
+    
+    .faceGemsHearts{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50vh;
+        margin: 0rem auto 0 auto;
+    }
+        
+    .face-svg{
+        width: 30%;
+        height: auto;
+    }
+    
+    .gemsHearts{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .gems-svg{
+        width: 60%;
+        height: auto;
+    }
+    
+    .hearts-svg{
+        width: 60%;
+        height: auto;
+    }
+    
+    .chams-svg{
+        width: 90%;
+        height: auto;
+    }
+    
+    /* BUTTON */
+    
+    .chameleon-btn{
+        font-family: "ohm-bold", sans-serif;
+        font-weight: 200;
+        font-style: italic;
+        font-size: 1.5rem;
+        color: white;
+        background-color:#141E27;
+        transition: all;
+        margin: 2rem auto 4rem auto;
+        padding: 0.5rem 1rem;
+    }
+    
+    .chameleon-btn:hover{
+        transition-duration: 1s;
+        transition-delay: 0.2s;
+        box-shadow: 2px 4px 4px;
+        border-radius: 5px;
+        color:#141E27;
+        background-color: white;
+        cursor: pointer;
+    }
+    
+    }
+
+
+

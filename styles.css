@@ -1,0 +1,600 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited{
+    color: inherit;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    display: flex;
+    overflow-y: hidden;
+   /* background:linear-gradient(to right, #141E27, #F38BA0); 
+    background:linear-gradient(to right, #141E27, #B9CCED);*/
+    background-color: #141E27;
+}
+
+section{
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    
+}
+
+/* HEADER */
+
+header{
+    position: absolute;
+    color: white;
+    width: 100vw;
+}
+
+.header-background{
+    width: 100vw;
+    background-color: #141E27;
+    opacity: 1;
+    height: 10vh;
+    transform: translateY(-10vh);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    justify-content: space-between;
+    margin: 0rem auto 0 auto;
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    z-index: 50;
+    color: white;
+    background-color: hsl(40 10% 10% / 0.4);;
+    
+}
+
+.fb-logo{
+    display: inline;
+    width: 4rem;
+    height: auto;
+    margin: 1rem 0 0 2rem;
+    z-index: 50;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 1rem;
+    
+    margin-top: 1.5rem;
+}
+
+li{
+    padding: 0.3rem 0.2rem;
+    text-align: center;
+}
+
+li:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+}
+
+
+
+/* INTRO */
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    /*background-color:#141E27;
+  /*  background:linear-gradient(to right, #141E27, #F38BA0);*/
+    
+}
+
+.forward-title{
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 9vw;
+    height: 15vh;
+}
+
+.intro-arrow{
+    color: white;
+    transform: scale(3);
+    margin: 0rem auto 2rem auto;
+}
+
+/* advertising */
+
+#advertising{
+   /* background:linear-gradient(to right, #F38BA0, lightblue);
+   /* background:linear-gradient(to right, lightblue, rgb(219, 123, 161)); */
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.advertising-title{
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 9vw;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.advertising-btn{
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 2rem;
+    color: white;
+    background-color:#141E27;
+    transition: all;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+.advertising-btn:hover{
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    box-shadow: 2px 4px 4px;
+    border-radius: 5px;
+    color:#141E27;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* rotoscohagen */
+
+#rotoscohagen{
+   /* background:linear-gradient(to right, lightblue, rgb(204, 0, 0));*/
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.rotoscohagen-title{
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 9vw;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.rotoscohagen-btn{
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 2rem;
+    color: white;
+    background-color:#141E27;
+    transition: all;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+.rotoscohagen-btn:hover{
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    box-shadow: 2px 4px 4px;
+    border-radius: 5px;
+    color:#141E27;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* DANISHCRIPT */
+
+#danishcript{
+
+   /* background:linear-gradient(to right, rgb(204, 0, 0), hotpink);*/
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.danishcript-title{
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 9vw;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.skill-p{
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+    margin-top: 0;
+}
+
+
+.danishcript-btn{
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 2rem;
+    color: white;
+    background-color:#141E27;
+    transition: all;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+.danishcript-btn:hover{
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    box-shadow: 2px 4px 4px;
+    border-radius: 5px;
+    color:#141E27;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* sakurai */
+
+#sakurai{
+   /* background:linear-gradient(to right, hotpink, #F8CB2E);*/
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.sakurai-title{
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 9vw;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+.sakurai-btn{
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 2rem;
+    color: white;
+    background-color:#141E27;
+    transition: all;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+.sakurai-btn:hover{
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    box-shadow: 2px 4px 4px;
+    border-radius: 5px;
+    color:#141E27;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* web3 */
+
+#web3{
+    /* background:linear-gradient(to right, hotpink, #F8CB2E);*/
+     color: white;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     overflow: hidden;
+ }
+ 
+ .web3-title{
+     font-family: "ohm-bold", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 9vw;
+     margin-top: 0;
+     margin-bottom: 1rem;
+ }
+ 
+ 
+ .web3-btn{
+     font-family: "ohm-bold", sans-serif;
+     font-weight: 200;
+     font-style: italic;
+     font-size: 2rem;
+     color: white;
+     background-color:#141E27;
+     transition: all;
+     margin-top: 2rem;
+     padding: 0.5rem 1rem;
+ }
+ 
+ .web3-btn:hover{
+     transition-duration: 1s;
+     transition-delay: 0.2s;
+     box-shadow: 2px 4px 4px;
+     border-radius: 5px;
+     color:#141E27;
+     background-color: white;
+     cursor: pointer;
+ }
+
+
+/* CHAMELEON */
+
+#chameleon{
+
+    background:linear-gradient(to right, #F8CB2E, #00B200);
+
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.chameleon-title{
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 9vw;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.chameleon-btn{
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 2rem;
+    color: white;
+    background-color:#141E27;
+    transition: all;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+.chameleon-btn:hover{
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    box-shadow: 2px 4px 4px;
+    border-radius: 5px;
+    color:#141E27;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+/* CHESSPRESSIONISM */
+
+#chesspressionism{
+    background:linear-gradient(to right, #00B200, white);
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.chesspressionism-title{
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 9vw;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.chess-btn{
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 2rem;
+    color: white;
+    background-color:#141E27;
+    transition: all;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+.chess-btn:hover{
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    box-shadow: 2px 4px 4px;
+    border-radius: 5px;
+    color:#141E27;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+    height: 3rem;
+
+}
+
+::-webkit-scrollbar-track{
+background: hsl(220 50% 65% / 1);
+background: #B9CCED;
+
+}
+
+/*background:linear-gradient(to right, #141E27, #F38BA0);*/
+
+
+::-webkit-scrollbar-thumb{
+    /*background:linear-gradient(lightblue, #1d4362);*/
+    background: #141E27;
+    border-radius: 100vw;
+    border: 3px solid white;
+    width: 1rem;  
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#F6F5F5;
+    cursor: grab;    
+}
+
+@media only screen and (max-width: 700px){
+
+    /* BTNS */
+
+    .danishcript-btn{
+        font-size: 1.5rem;
+    }
+
+    .sakurai-btn{
+        font-size: 1.5rem;
+    }
+
+    .web3-btn{
+        font-size: 1.5rem;
+    }
+
+    .chameleon-btn{
+        font-size: 1.5rem;
+    }
+
+    .chess-btn{
+        font-size: 1.5rem;
+    }
+
+    .rotoscohagen-btn{
+        font-size: 1.5rem;
+    }
+
+    .advertising-btn{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    /* H2 */
+
+    .danishcript-title{
+        font-size: 15vw;
+    }
+
+    .sakurai-title{
+        font-size: 15vw;
+    }
+
+    .chameleon-title{
+        font-size: 15vw;
+    }
+
+    .chesspressionism-title{
+        font-size: 12vw;
+    }
+
+    .rotoscohagen-title{
+        font-size: 15vw;
+    }
+
+    .web3-title{
+        font-size: 15vw;
+    }
+
+    .advertising-title{
+        font-size: 15vw;
+    }
+
+
+    /* ARROWS */
+
+    .fa-arrow-down-long{
+        color: white;
+        transform: scale(2);
+        margin: 2rem auto 2rem auto;
+    }
+
+    /* SKILLS P */
+
+    .skill-p{
+        font-size: 8vw;
+        margin-top: 0;
+    }
+
+    /* BTNS */
+
+    .danishcript-btn{
+        font-size: 1rem;
+    }
+
+    .sakurai-btn{
+        font-size: 1rem;
+    }
+
+    .chameleon-btn{
+        font-size: 1rem;
+    }
+
+    .chess-btn{
+        font-size: 1rem;
+    }
+
+    .rotoscohagen-btn{
+        font-size: 1rem;
+    }
+
+    .web3-btn{
+        font-size: 1rem;
+    }
+
+    .advertising-btn{
+        font-size: 1rem;
+    }
+}
