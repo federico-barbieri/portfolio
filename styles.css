@@ -325,6 +325,27 @@ li:hover{
     cursor: pointer;
 }
 
+/* TRANSITION */
+
+.transition{
+background-image: url('waves/wave-new.svg');
+}
+
+.transition2{
+    background-image: url('waves/wave-yellow.svg');
+    transform: rotateY(180deg);
+    }
+
+
+
+.spacer{
+    aspect-ratio: 16/9;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 /* web3 */
 
 #web3{
