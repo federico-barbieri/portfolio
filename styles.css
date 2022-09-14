@@ -2,6 +2,10 @@
 
 :root{
     font-size: 16px;
+    --background: #141E27;
+    --new-blue: #32ccff;
+    --white: #ffffff;
+    --black: #000000;
 }
 
 body{
@@ -22,7 +26,7 @@ a:visited{
 #container{
     width: 100%;
     height: 100%;
-    background-color: #141E27;
+    background-color: var(--background);
 }
 
 section{
@@ -37,13 +41,13 @@ section{
 
 header{
     position: absolute;
-    color: white;
+    color: var(--white);
     width: 100vw;
 }
 
 .header-background{
     width: 100vw;
-    background-color: #141E27;
+    background-color: var(--background);
     opacity: 1;
     height: 10vh;
     transform: translateY(-10vh);
@@ -60,7 +64,7 @@ nav{
     font-weight: 200;
     font-style: italic;
     z-index: 50;
-    color: white;
+    color: var(--white);
     background-color: hsl(40 10% 10% / 0.4);;
     
 }
@@ -93,8 +97,8 @@ li{
 
 li:hover{
     cursor: pointer;
-    background-color: white;
-    color: black;
+    background-color: var(--white);
+    color: var(--black);
     padding: 1rem;
 }
 
@@ -106,7 +110,7 @@ li:hover{
     display: flex;
     flex-direction: column;
     text-align: center;
-    color: white;
+    color: var(--white);
     
 }
 
@@ -119,7 +123,7 @@ li:hover{
 }
 
 .intro-arrow{
-    color: white;
+    color: var(--white);
     transform: scale(3);
     margin: 0rem auto 4rem auto;
     animation: arrowDown 2s ease-in-out 0.5s infinite forwards;
@@ -131,18 +135,45 @@ li:hover{
     100%{transform: translate(0, 0); transform:scale(3);}
 }
 
+/* about */
+
+#about{
+    
+    color: var(--white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: var(--background);
+    background: linear-gradient(100deg, #141E27) 85%, rgba(247,223,30) 100%;
+    overflow: hidden;
+    height: 50vh;
+}
+
+.about-p{
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: var(--white);
+    width: 50%;
+    line-height: 1.5;
+    text-align: left;
+}
+
 /* advertising */
 
 #advertising{
 
-    color: white;
+    color: var(--white);
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     
-    background: #141E27;
+    background: var(--background);
     background: linear-gradient(100deg, #141E27) 85%, rgba(247,223,30) 100%;
 
 
@@ -162,8 +193,8 @@ li:hover{
     font-weight: 200;
     font-style: italic;
     font-size: 2rem;
-    color: white;
-    background-color:#141E27;
+    color: var(--white);
+    background-color:var(--background);
     transition: all;
     margin-top: 2rem;
     padding: 0.5rem 1rem;
@@ -174,8 +205,8 @@ li:hover{
     transition-delay: 0.2s;
     box-shadow: 2px 4px 4px;
     border-radius: 5px;
-    color:#141E27;
-    background-color: white;
+    color:var(--background);
+    background-color: var(--white);
     cursor: pointer;
 }
 
@@ -183,13 +214,13 @@ li:hover{
 
 #rotoscohagen{
   
-    color: white;
+    color: var(--white);
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #141E27;
+    background: var(--background);
     background: linear-gradient(100deg, #141E27) 85%, rgba(247,223,30) 100%;
 }
 
@@ -207,8 +238,8 @@ li:hover{
     font-weight: 200;
     font-style: italic;
     font-size: 2rem;
-    color: white;
-    background-color:#141E27;
+    color: var(--white);
+    background-color:var(--background);
     transition: all;
     margin-top: 2rem;
     padding: 0.5rem 1rem;
@@ -219,8 +250,8 @@ li:hover{
     transition-delay: 0.2s;
     box-shadow: 2px 4px 4px;
     border-radius: 5px;
-    color:#141E27;
-    background-color: white;
+    color:var(--background);
+    background-color: var(--white);
     cursor: pointer;
 }
 
@@ -229,13 +260,13 @@ li:hover{
 #danishcript{
 
 
-    color: white;
+    color: var(--white);
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #141E27;
+    background: var(--background);
     background: linear-gradient(100deg, #141E27) 85%, rgba(247,223,30) 100%;
 }
 
@@ -262,8 +293,8 @@ li:hover{
     font-weight: 200;
     font-style: italic;
     font-size: 2rem;
-    color: white;
-    background-color:#141E27;
+    color: var(--white);
+    background-color:var(--background);
     transition: all;
     margin-top: 2rem;
     padding: 0.5rem 1rem;
@@ -274,22 +305,21 @@ li:hover{
     transition-delay: 0.2s;
     box-shadow: 2px 4px 4px;
     border-radius: 5px;
-    color:#141E27;
-    background-color: white;
+    color:var(--background);
+    background-color: var(--white);
     cursor: pointer;
 }
 
 /* sakurai */
 
 #sakurai{
-   /* background:linear-gradient(to right, hotpink, #F8CB2E);*/
-    color: white;
+    color: var(--white);
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #141E27;
+    background: var(--background);
     background: linear-gradient(100deg, #141E27) 85%, rgba(247,223,30) 100%;
 }
 
@@ -308,8 +338,8 @@ li:hover{
     font-weight: 200;
     font-style: italic;
     font-size: 2rem;
-    color: white;
-    background-color:#141E27;
+    color: var(--white);
+    background-color:var(--background);
     transition: all;
     margin-top: 2rem;
     padding: 0.5rem 1rem;
@@ -320,8 +350,8 @@ li:hover{
     transition-delay: 0.2s;
     box-shadow: 2px 4px 4px;
     border-radius: 5px;
-    color:#141E27;
-    background-color: white;
+    color:var(--background);
+    background-color: var(--white);
     cursor: pointer;
 }
 
@@ -350,13 +380,13 @@ background-image: url('waves/wave-new.svg');
 
 #web3{
     /* background:linear-gradient(to right, hotpink, #F8CB2E);*/
-     color: white;
+     color: var(--white);
      text-align: center;
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
-     background: #141E27;
+     background: var(--background);
      background: linear-gradient(100deg, #141E27) 85%, rgba(247,223,30) 100%;
  }
  
@@ -375,8 +405,8 @@ background-image: url('waves/wave-new.svg');
      font-weight: 200;
      font-style: italic;
      font-size: 2rem;
-     color: white;
-     background-color:#141E27;
+     color: var(--white);
+     background-color:var(--background);
      transition: all;
      margin-top: 2rem;
      padding: 0.5rem 1rem;
@@ -387,8 +417,8 @@ background-image: url('waves/wave-new.svg');
      transition-delay: 0.2s;
      box-shadow: 2px 4px 4px;
      border-radius: 5px;
-     color:#141E27;
-     background-color: white;
+     color:var(--background);
+     background-color: var(--white);
      cursor: pointer;
  }
 
@@ -555,7 +585,7 @@ background-image: url('waves/wave-new.svg');
     /* ARROWS */
 
     .fa-arrow-down-long{
-        color: white;
+        color: var(--white);
         transform: scale(2);
         margin: 2rem auto 2rem auto;
     }
