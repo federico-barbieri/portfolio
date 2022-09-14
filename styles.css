@@ -421,6 +421,7 @@ nav{
      cursor: pointer;
  }   
     
+ /* blobs */
 
 .spacer1{
     aspect-ratio: 3/4;
@@ -438,6 +439,28 @@ nav{
     background-size: cover;
 }
 
+/* footer */
+
+footer{
+    height: 20vh;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logos{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo{
+    transform: scale(3);
+}
 
 /* CHAMELEON 
 
