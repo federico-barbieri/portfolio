@@ -1,5 +1,9 @@
-html{
+:root{
     font-size: 16px;
+    --background: #141E27;
+    --new-blue: #32ccff;
+    --white: #ffffff;
+    --black: #000000;
 }
 
 a{
@@ -400,5 +404,30 @@ margin: 2rem auto;
     color:#141E27;
     background-color: white;
     cursor: pointer;
+}
+
+/* footer */
+
+footer{
+    height: 20vh;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--background);
+    filter: drop-shadow(4px 0 8px var(--new-blue));
+}
+
+.logos{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo{
+    transform: scale(3);
 }
 
