@@ -43,6 +43,7 @@ header{
     position: absolute;
     color: var(--white);
     width: 100vw;
+    border-bottom: 0.5px solid var(--new-blue);
 }
 
 .header-background{
@@ -66,6 +67,7 @@ nav{
     z-index: 50;
     color: var(--white);
     background-color: hsl(40 10% 10% / 0.4);;
+    
     
 }
 
@@ -111,7 +113,7 @@ li:hover{
     flex-direction: column;
     text-align: center;
     color: var(--white);
-    
+    background-image: url('waves/blob2.svg');
 }
 
 .forward-title{
@@ -144,11 +146,10 @@ li:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    background: var(--background);
-    background: linear-gradient(100deg, #141E27) 85%, rgba(247,223,30) 100%;
+    justify-content: center;
+    background-image: url('waves/blob1.svg');
     overflow: hidden;
-    height: 50vh;
+    height: 100vh;
 }
 
 .about-p{
@@ -172,11 +173,7 @@ li:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-    background: var(--background);
-    background: linear-gradient(100deg, #141E27) 85%, rgba(247,223,30) 100%;
-
-
+    background-image: url('waves/blob2.svg');
 }
 
 .advertising-title{
@@ -220,8 +217,7 @@ li:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: var(--background);
-    background: linear-gradient(100deg, #141E27) 85%, rgba(247,223,30) 100%;
+    background-image: url('waves/blob1.svg');
 }
 
 .rotoscohagen-title{
@@ -258,16 +254,13 @@ li:hover{
 /* DANISHCRIPT */
 
 #danishcript{
-
-
     color: var(--white);
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: var(--background);
-    background: linear-gradient(100deg, #141E27) 85%, rgba(247,223,30) 100%;
+    background-image: url('waves/blob2.svg');
 }
 
 .danishcript-title{
@@ -319,8 +312,7 @@ li:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: var(--background);
-    background: linear-gradient(100deg, #141E27) 85%, rgba(247,223,30) 100%;
+    background-image: url('waves/blob1.svg');
 }
 
 .sakurai-title{
@@ -355,39 +347,20 @@ li:hover{
     cursor: pointer;
 }
 
-/* TRANSITION */
 
-.transition{
-background-image: url('waves/wave-new.svg');
-}
-
-.transition2{
-    background-image: url('waves/wave-yellow.svg');
-    transform: rotateY(180deg);
-    }
-
-
-
-.spacer{
-    aspect-ratio: 16/9;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
 
 /* web3 */
 
 #web3{
-    /* background:linear-gradient(to right, hotpink, #F8CB2E);*/
+
      color: var(--white);
      text-align: center;
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
-     background: var(--background);
-     background: linear-gradient(100deg, #141E27) 85%, rgba(247,223,30) 100%;
+     background-image: url('waves/blob2.svg');
+    
  }
  
  .web3-title{
@@ -420,7 +393,15 @@ background-image: url('waves/wave-new.svg');
      color:var(--background);
      background-color: var(--white);
      cursor: pointer;
- }
+ }   
+    
+.spacer{
+    aspect-ratio: 16/9;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 
 /* CHAMELEON */
