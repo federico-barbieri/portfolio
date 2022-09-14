@@ -48,24 +48,27 @@ nav{
 
 .dropdown{
     height: 10vh;
-    width: 80%;
+    width: 90%;
     margin: auto;
     background: var(--background);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    
+}
+
+.nav-logo{
+    width: 5rem;
 }
 
 .projects, .contact-div{
     position: relative;
 }
 
-.contact-div{
-    margin-bottom: 2rem;
-}
 
-.projects ul, .contact-div button{
+.projects ul{
     position: absolute;
+    
 }
 
 .projects a{
@@ -73,6 +76,7 @@ nav{
 }
 
 .projects ul{
+    right: -3rem;
     top: 3rem;
     width: 15rem;
     height: 20rem;
@@ -80,7 +84,7 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     list-style-type: none;
     font-family: forma-djr-micro, sans-serif;
     font-weight: 400;
@@ -561,45 +565,6 @@ nav{
         font-size: 1.5rem;
     }
 
-/* HEADER */
-
-nav{
-    width: 80%;
-    
-}
-
-.dropdown{
-    height: 10vh;
-    width: 80%;
-    margin: auto;
-    background: var(--background);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.projects, .contact-div{
-    position: relative;
-    
-}
-
-.contact-div{
-    margin-bottom: 1.7rem;
-    right: 3rem;
-}
-
-.dropdown button{
-    background: none;
-    border: none;
-    color: var(--white);
-    font-family: "ohm-bold", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-
 }
 
 
@@ -703,41 +668,7 @@ nav{
     }
 
 
-    nav{
-        width: 80%;
-        
-    }
     
-    .dropdown{
-        height: 10vh;
-        width: 80%;
-        margin: auto;
-        background: var(--background);
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    .projects, .contact-div{
-        position: relative;
-        
-    }
-    
-    .contact-div{
-        margin-bottom: 1rem;
-        right: 0rem;
-    }
-    
-    .dropdown button{
-        background: none;
-        border: none;
-        color: var(--white);
-        font-family: "ohm-bold", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 1rem;
-        cursor: pointer;
-    }
 
 
 }
