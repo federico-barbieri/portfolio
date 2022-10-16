@@ -28,9 +28,6 @@ main{
     align-items: flex-start;
     justify-content: flex-start;
     width: 100vw;
-    
-    /*background:linear-gradient(to bottom, lightblue, rgb(204, 0, 0));
-    background:linear-gradient(to bottom, #B9CCED, #141E27);*/
     background-color: #141E27;
 }
 
@@ -169,15 +166,6 @@ section{
 
 /* iteration */
 
-.iteration-h2{
-    font-family: forma-djr-micro, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: right;
-    margin: 4rem auto 1rem auto;
-    width: 85%;
-
-}
 
 .origin-p{
     font-family: forma-djr-micro, sans-serif;
@@ -191,23 +179,27 @@ section{
     text-align: left;
 }
 
-.nyhavn-p{
-    font-family: forma-djr-micro, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.5rem;
-    color: white;
-    margin: 0rem auto;
+.process-imgs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     width: 85%;
-    display: block;
-    text-align: right;
-    
+    margin: 2rem auto 0 auto;
 }
 
-.nyhavn{
-    max-width: 85%;
+.landing-img{
+    width: 30%;
     height: auto;
-    margin: 2rem auto;
+    filter: drop-shadow(2px 5px 5px black);
+    border-radius: 10px;
+}
+
+.nummere-img{
+    width: 60%;
+    height: auto;
+    filter: drop-shadow(2px 5px 5px black);
+    border-radius: 10px;
 }
 
 /* process */
@@ -216,7 +208,7 @@ section{
     font-family: forma-djr-micro, sans-serif;
     font-weight: 400;
     font-style: normal;
-    text-align: left;
+    text-align: right;
     margin: 4rem auto 1rem auto;
     width: 85%;
 
@@ -231,27 +223,17 @@ p.process-p{
     margin: 0rem auto;
     width: 85%;
     display: block;
-    text-align: left;
+    text-align: right;
 }
 
-.process-img{
+.styletile{
     max-width: 85%;
     height: auto;
     margin: 2rem auto;
+    border-radius: 10px;
+    filter: drop-shadow(2px 5px 5px black);
 }
 
-.sa-img{
-    max-width: 85%;
-    height: auto;
-    margin: 2rem auto;
-}
-
-
-.imperativ-img{
-    max-width: 85%;
-    height: auto;
-    margin: 2rem auto;
-}
 
 /* categories */
 
@@ -275,25 +257,6 @@ p.categories-p{
     width: 85%;
     display: block;
     text-align: right;
-}
-
-.sa-img{
-    max-width: 85%;
-    height: auto;
-    margin: 2rem auto;
-}
-
-
-.imperativ-img{
-    max-width: 85%;
-    height: auto;
-    margin: 2rem auto;
-}
-
-.adjektiver-img{
-    max-width: 85%;
-    height: auto;
-    margin: 2rem auto;
 }
 
 
@@ -357,7 +320,7 @@ footer{
     align-items: center;
     justify-content: space-around;
     background-color: var(--background);
-    filter: drop-shadow(4px 0 8px var(--new-blue));
+
 }
 
 .logos{

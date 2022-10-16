@@ -191,6 +191,7 @@ margin: 2rem auto;
     height: auto;
     padding: 1rem;
     filter: drop-shadow(4px 4px 4px black);
+    border-radius: 20px;
 }
 
 .eth{
@@ -198,6 +199,7 @@ margin: 2rem auto;
     height: auto;
     padding: 1rem;
     filter: drop-shadow(4px 4px 4px black);
+    border-radius: 20px;
 }
 
 .eth-all{
@@ -205,6 +207,7 @@ margin: 2rem auto;
     height: auto;
     padding: 1rem;
     filter: drop-shadow(4px 4px 4px black);
+    border-radius: 20px;
 }
 
 .link-all{
@@ -212,66 +215,42 @@ margin: 2rem auto;
     height: auto;
     padding: 1rem;
     filter: drop-shadow(4px 4px 4px black);
+    border-radius: 20px;
 }
 
-/*print*/
+/* gifs */
 
-.print{
+.gifs{
+    width: 80%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    max-width: 80vw;
-    height: auto;
-    margin: 2rem auto 5rem auto;
-    
-    padding: 1rem 1rem;
 }
 
-.text{    
-font-family: forma-djr-micro, sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 1.5rem;
-color: white;
-max-width: 60ch;
-line-height: 1.5;
-text-align: left;
+.sections-gif{
+    width: 30%;
 }
 
-.print-examples{
-    width: 50%;
-    height: auto;
-    filter: drop-shadow(2px 2px 1px black);
+.eth-gif{
+    width: 30%;
 }
 
-/* video */
-
-.video{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 90vw;
-  height: 90vh;
-  margin: 2rem auto;
-  
+.text-proto{
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    max-width: 60%;
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 2rem;
+    padding-top: 2rem;
 }
 
-.watch{
-  font-family: forma-djr-micro, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.5rem;
-  color: white;
-  max-width: 60ch;
-  line-height: 1.5;
-  text-align: center;
-}
-
-video{
-  width: 100%;
-  height: auto;
+.proto-span{
+    text-decoration: underline;
 }
 
 
@@ -310,7 +289,6 @@ footer{
     align-items: center;
     justify-content: space-around;
     background-color: var(--background);
-    filter: drop-shadow(4px 0 8px var(--new-blue));
 }
 
 .footer-logos{
@@ -370,16 +348,6 @@ footer{
     text-align: left;
 }
 
-.video{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 80vw;
-    height: 80vh;
-    margin: 2rem auto;
-    
-  }
 
 }
 
@@ -397,17 +365,6 @@ footer{
         padding: 1rem 1rem;
         flex-wrap: wrap;
     }
-
-    .video{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        width: 80vw;
-        height: 70vh;
-        margin: 2rem auto;
-        
-      }
 
     /* BUTTON */
 

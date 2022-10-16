@@ -317,7 +317,6 @@ footer{
     align-items: center;
     justify-content: space-around;
     background-color: var(--background);
-    filter: drop-shadow(4px 0 8px var(--new-blue));
 }
 
 .logos{

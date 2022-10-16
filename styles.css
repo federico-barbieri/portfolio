@@ -44,7 +44,7 @@ section{
 
 nav{
     width: 100%;
-    
+  
 }
 
 .dropdown{
@@ -55,7 +55,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+    
 }
 
 .nav-logo{
@@ -69,7 +69,6 @@ nav{
 
 .projects ul{
     position: absolute;
-    
 }
 
 .projects a{
@@ -92,7 +91,6 @@ nav{
     font-style: normal;
     text-align: left;
     opacity: 0;
-    
     transform: translateY(-10px);
     transition: all 0.4s ease;
 }
@@ -141,7 +139,7 @@ nav{
     flex-direction: column;
     text-align: center;
     color: var(--white);
-    background-image: url('waves/blob2.svg');
+
    
 }
 
@@ -152,6 +150,25 @@ nav{
     font-size: 9vw;
     height: 15vh;
 }
+
+.triangle {
+    position: relative;
+    background: #2c3e50;
+    height: 70vh;
+  }
+  
+  .triangle::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 100px 0 100px;
+    border-color: #2c3e50 transparent transparent transparent;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+  }
 
 .intro-arrow{
     color: var(--white);
@@ -175,7 +192,6 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('waves/blob1.svg');
     
 }
 
@@ -200,7 +216,7 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('waves/blob2.svg');
+
 }
 
 .advertising-title{
@@ -234,6 +250,7 @@ nav{
     cursor: pointer;
 }
 
+
 /* rotoscohagen */
 
 #rotoscohagen{
@@ -244,7 +261,6 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('waves/blob1.svg');
 }
 
 .rotoscohagen-title{
@@ -287,7 +303,6 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('waves/blob2.svg');
 }
 
 .danishcript-title{
@@ -339,7 +354,6 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('waves/blob1.svg');
 }
 
 .sakurai-title{
@@ -386,7 +400,6 @@ nav{
      flex-direction: column;
      align-items: center;
      justify-content: center;
-     background-image: url('waves/blob2.svg');
     
  }
  
@@ -422,23 +435,6 @@ nav{
      cursor: pointer;
  }   
     
- /* blobs */
-
-.spacer1{
-    aspect-ratio: 3/4;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: cover;
-}
-
-.spacer2{
-    aspect-ratio: 3/4;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
-}
 
 /* footer */
 
@@ -450,7 +446,7 @@ footer{
     align-items: center;
     justify-content: space-around;
     background-color: var(--background);
-    filter: drop-shadow(4px 0 8px var(--new-blue));
+
 }
 
 .logos{

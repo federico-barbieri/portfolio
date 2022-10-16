@@ -1,3 +1,7 @@
+
+
+
+
 // grab the main title and change its inner html through functions
 
 let mainTitle = document.querySelector('.forward-title');
