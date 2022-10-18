@@ -129,17 +129,6 @@ nav{
     cursor: pointer;
 }
 
-@media only screen and (max-width: 400px){
-
-  .about button{
-    font-size: 1rem;
-  }
-
-  .contact-div button{
-    font-size: 1rem;
-  }
-
-}
 
 
 /* about */
@@ -475,4 +464,16 @@ margin: 2rem auto;
     background-color: white;
     cursor: pointer;
 }
+}
+
+@media only screen and (max-width: 500px){
+
+  .about button{
+    font-size: 1rem;
+  }
+
+  .contact-div button{
+    font-size: 1rem;
+  }
+
 }
