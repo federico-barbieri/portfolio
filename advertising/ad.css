@@ -446,6 +446,13 @@ video{
     text-align: left;
   }
 
+  /* hr */ 
+
+  hr{
+    width: 4rem;
+    border: 1px solid white;
+  }
+
 
 /* BUTTON */
 
