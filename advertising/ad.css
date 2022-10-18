@@ -263,14 +263,14 @@ text-align: left;
   align-items: center;
   justify-content: center;
   width: 90vw;
-  height: 90vh;
+  height: auto;
   margin: 2rem auto;
   
 }
 
 .chandon-h2{
   font-family: forma-djr-micro, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   font-size: 1.5rem;
   color: white;
@@ -292,14 +292,14 @@ video{
     align-items: center;
     justify-content: center;
     width: 90vw;
-    height: 90vh;
+    height: auto;
     margin: 2rem auto;
     
   }
   
   .ada-h2{
     font-family: forma-djr-micro, sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
     font-size: 1.5rem;
     color: white;
@@ -328,7 +328,7 @@ video{
   
   .latitud-h2{
     font-family: forma-djr-micro, sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
     font-size: 1.5rem;
     color: white;
@@ -354,14 +354,14 @@ video{
     align-items: center;
     justify-content: center;
     width: 90vw;
-    height: 90vh;
+    height: auto;
     margin: 2rem auto;
     
   }
   
   .holocaust-h2{
     font-family: forma-djr-micro, sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
     font-size: 1.5rem;
     color: white;
@@ -383,14 +383,14 @@ video{
     align-items: center;
     justify-content: center;
     width: 90vw;
-    height: 90vh;
+    height: auto;
     margin: 2rem auto;
     
   }
   
   .shutterstock-h2{
     font-family: forma-djr-micro, sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
     font-size: 1.5rem;
     color: white;
@@ -412,14 +412,14 @@ video{
     align-items: center;
     justify-content: center;
     width: 90vw;
-    height: 90vh;
+    height: auto;
     margin: 2rem auto;
     
   }
   
   .missing-h2{
     font-family: forma-djr-micro, sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
     font-size: 1.5rem;
     color: white;
@@ -431,6 +431,19 @@ video{
   video{
     width: 80%;
     height: auto;
+  }
+
+  /* all paragraphs */
+
+  .project-p{
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    max-width: 50ch;
+    line-height: 1.5;
+    text-align: left;
   }
 
 
