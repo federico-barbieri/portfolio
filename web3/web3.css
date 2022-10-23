@@ -503,11 +503,11 @@ footer{
         width: 90vw;
         margin: 2rem auto;
         padding: 1rem;
-        flex-wrap: wrap;
+        flex-wrap: none;
     }
     
     .btc{
-        width: 100%;
+        width: 80%;
         height: auto;
         padding: 1rem;
         filter: drop-shadow(4px 4px 4px black);
@@ -515,7 +515,7 @@ footer{
     }
     
     .eth{
-        width: 100%;
+        width: 80%;
         height: auto;
         padding: 1rem;
         filter: drop-shadow(4px 4px 4px black);
@@ -523,7 +523,7 @@ footer{
     }
     
     .eth-all{
-        width: 100%;
+        width: 80%;
         height: auto;
         padding: 1rem;
         filter: drop-shadow(4px 4px 4px black);
@@ -531,7 +531,7 @@ footer{
     }
     
     .link-all{
-        width: 100%;
+        width: 80%;
         height: auto;
         padding: 1rem;
         filter: drop-shadow(4px 4px 4px black);
