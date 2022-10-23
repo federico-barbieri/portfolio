@@ -494,6 +494,49 @@ footer{
         font-size: 1rem;
         cursor: pointer;
     }
+
+    .screenshots{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 90vw;
+        margin: 2rem auto;
+        padding: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .btc{
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        filter: drop-shadow(4px 4px 4px black);
+        border-radius: 20px;
+    }
+    
+    .eth{
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        filter: drop-shadow(4px 4px 4px black);
+        border-radius: 20px;
+    }
+    
+    .eth-all{
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        filter: drop-shadow(4px 4px 4px black);
+        border-radius: 20px;
+    }
+    
+    .link-all{
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        filter: drop-shadow(4px 4px 4px black);
+        border-radius: 20px;
+    }
     
     }
     
